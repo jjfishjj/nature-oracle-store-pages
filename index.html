@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4efe6" />
+    <meta name="description" content="以地、水、火、風為靈感的自然系選物商城原型。" />
+    <title>森光選物｜Nature Atelier</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-mark">◜</span><span>森光選物</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主要導覽">
+        <a href="#divination">免費占卜</a><a href="#shop">元素商店</a><a href="#content">內容中心</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="#cart" aria-label="購物車"><span>⌑</span><b id="cartBadge" hidden>0</b></a>
+        <div class="account-wrap">
+          <button class="account-button" id="accountButton" aria-expanded="false">登入</button>
+          <div class="account-menu" id="accountMenu" hidden></div>
+        </div>
+        <button class="lang-button" aria-label="切換語言">中</button>
+        <button class="menu-button" id="menuButton" aria-expanded="false" aria-label="選單"><i></i><i></i><i></i></button>
+      </div>
+    </header>
+
+    <div class="announcement"><div>🌿 秋日限定免運活動　・　滿 NT$1,200 宅配免運　・　加入會員享首購禮</div></div>
+
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="menu-close" id="menuClose" aria-label="關閉選單">×</button>
+      <p class="eyebrow">NATURE ATELIER</p>
+      <a href="#home">首頁</a><a href="#divination">免費占卜</a><a href="#shop">元素商店</a><a href="#content">內容中心</a><a href="#member">會員中心</a><a href="#cart">購物車</a>
+    </aside>
+    <div class="overlay" id="overlay" hidden></div>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer>
+      <div>
+        <p class="footer-brand">森光選物</p><p>在日常裡，找回自然的節奏。</p>
+      </div>
+      <nav><a href="#about">關於我們</a><a href="#content">內容中心</a><a href="#shop">退換貨政策</a><a href="mailto:hello@example.com">聯絡我們</a></nav>
+      <p class="footer-meta">本頁為原創示範商城，不代表參考網站或其品牌。<br>© 2026 Nature Atelier</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="firebase-config.js"></script>
+    <script src="firebase-auth.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
